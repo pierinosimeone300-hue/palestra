@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pegaso Gym — Palestra</title>
+<meta name="description" content="Pegaso Gym: sala pesi, corsi e area cardio. Iscriviti e prova la tua prima lezione gratuita.">
+<link rel="icon" type="image/png" href="img/favicon-source.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bevan&family=Anton&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo" aria-label="Pegaso Gym">
+      <img src="img/logo-trasparente.png" alt="Pegaso Gym">
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="corsi.html">Corsi</a>
+      <a href="abbigliamento.html">Abbigliamento</a>
+      <a href="chi-siamo.html">Chi Siamo</a>
+      <a href="contatti.html">Contatti</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="contatti.html" class="btn btn-primary btn-sm" style="display:none" id="ctaDesktop">Iscriviti</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <video class="hero-video" autoplay muted loop playsinline webkit-playsinline poster="img/hero-video-poster.jpg">
+    <source src="video/pegaso-hero.webm" type="video/webm">
+    <source src="video/pegaso-hero.mp4" type="video/mp4">
+  </video>
+  <button class="hero-play-hint" id="heroPlayHint" type="button" aria-label="Attiva il video">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+    <span>Tocca per avviare il video</span>
+  </button>
+  <div class="container hero-inner">
+    <div class="hero-tag">PALESTRA · SALA PESI · CORSI</div>
+    <h1>Allenati come un<br><em>eroe. Ogni giorno.</em></h1>
+    <p class="lead">Sala pesi completa, corsi di gruppo e un'atmosfera che ti spinge oltre il limite. Benvenuto da Pegaso Gym.</p>
+    <div class="hero-cta">
+      <a href="contatti.html" class="btn btn-primary">Prova gratuita</a>
+      <a href="corsi.html" class="btn btn-outline">Scopri i corsi</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="feature-row text-only">
+      <div class="copy">
+        <div class="eyebrow">Chi siamo</div>
+        <h2>Uno spazio pensato per allenarsi sul serio</h2>
+        <p>Ambienti industrial, attrezzature complete e una community che non molla mai. Pegaso Gym è il posto dove il tuo allenamento diventa un'abitudine, non un obbligo.</p>
+        <ul class="checklist">
+          <li>Sala pesi ampia con free weights e macchine guidate</li>
+          <li>Zona cardio con tapis roulant e cardio-machine</li>
+          <li>Corsi di gruppo, tra cui Pilates</li>
+          <li>Area relax con reception e salottino</li>
+        </ul>
+        <a href="chi-siamo.html" class="link-minimal" style="margin-top:14px;">Scopri di più</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt carousel-section">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow" style="justify-content:center;">La palestra</div>
+      <h2>Dentro Pegaso Gym</h2>
+      <p class="carousel-intro">Attrezzature professionali Diamond e Technogym, curate nei minimi dettagli: la qualità che serve per allenarti in sicurezza e senza compromessi, dal principiante all'agonista.</p>
+    </div>
+    <div class="carousel" id="gymCarousel">
+      <div class="carousel-track">
+        <div class="carousel-slide"><img src="img/gym-carousel-1.jpg" alt="Sala pesi Pegaso Gym con attrezzature Diamond"></div>
+        <div class="carousel-slide"><img src="img/gym-carousel-2.jpg" alt="Zona pesi liberi e rack Pegaso Gym"></div>
+        <div class="carousel-slide"><img src="img/gym-carousel-3.jpg" alt="Sala cardio con macchinari Technogym"></div>
+        <div class="carousel-slide"><img src="img/gym-carousel-4.jpg" alt="Panoramica sala pesi Pegaso Gym"></div>
+      </div>
+      <button class="carousel-arrow prev" id="carouselPrev" type="button" aria-label="Immagine precedente">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <button class="carousel-arrow next" id="carouselNext" type="button" aria-label="Immagine successiva">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+      <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+    <div class="text-center" style="margin-top:36px;">
+      <a href="corsi.html" class="link-minimal" style="justify-content:center;">Vedi tutti i corsi</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="feature-row">
+      <div class="media media-video" style="aspect-ratio: 720 / 1280;">
+        <video src="video/sala-posing-corso.mp4" poster="img/sala-posing-video-poster.jpg" autoplay muted loop playsinline preload="auto" aria-label="Video della sala posing Pegaso Gym"></video>
+      </div>
+      <div class="copy">
+        <div class="eyebrow">Sala Posing</div>
+        <h2>Preparati per la gara, ogni giorno</h2>
+        <p>Una sala interamente dedicata alla posa: specchi su più pareti, pedana rialzata e luci scenografiche per allenarti nelle stesse condizioni del palco. Pensata per chi si prepara a una gara di bodybuilding o fitness, ma utile a chiunque voglia lavorare su mimica, simmetria e controllo del corpo davanti allo specchio.</p>
+        <ul class="checklist">
+          <li>Specchi su più pareti per controllare la posa da ogni angolazione</li>
+          <li>Pedana rialzata che riproduce le condizioni del palco</li>
+          <li>Illuminazione scenografica dedicata</li>
+          <li>Ideale per la preparazione a gare di bodybuilding e fitness</li>
+        </ul>
+        <a href="contatti.html" class="link-minimal" style="margin-top:14px;">Prenota una sessione</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="feature-row reverse">
+      <div class="media"><img src="img/lux-bag-hip.jpg" alt="Borsa Pegaso Gym"></div>
+      <div class="copy">
+        <div class="eyebrow">Abbigliamento</div>
+        <h2>Porta Pegaso ovunque tu vada</h2>
+        <p>T-shirt, felpe, borse e altri capi ufficiali Pegaso Gym: li trovi in vendita esclusivamente qui, in palestra. Passa a scoprire la collezione completa.</p>
+        <a href="abbigliamento.html" class="btn btn-primary" style="margin-top:6px;">Vai all'abbigliamento</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow" style="justify-content:center;">Abbonamenti</div>
+      <h2>Scegli il piano più adatto a te</h2>
+      <p class="carousel-intro">Dal mensile più flessibile all'annuale più conveniente: trova il piano su misura per il tuo allenamento.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="card price-card">
+        <div class="card-body">
+          <div class="price-name">Mensile</div>
+          <div class="price-value"><sup>€</sup>55</div>
+          <div class="price-period">al mese</div>
+          <div class="price-note">Massima flessibilità</div>
+          <a href="https://wa.me/393931263764?text=Ciao%21%20Vorrei%20informazioni%20sull%27abbonamento%20mensile." target="_blank" rel="noopener" class="btn btn-outline-red">Chiedi info su WhatsApp</a>
+        </div>
+      </div>
+      <div class="card price-card">
+        <div class="card-body">
+          <div class="price-name">Trimestrale</div>
+          <div class="price-value"><sup>€</sup>138</div>
+          <div class="price-period">ogni 3 mesi</div>
+          <div class="price-note">Circa 46€ al mese</div>
+          <a href="https://wa.me/393931263764?text=Ciao%21%20Vorrei%20informazioni%20sull%27abbonamento%20trimestrale." target="_blank" rel="noopener" class="btn btn-outline-red">Chiedi info su WhatsApp</a>
+        </div>
+      </div>
+      <div class="card price-card">
+        <div class="card-body">
+          <div class="price-name">Semestrale</div>
+          <div class="price-value"><sup>€</sup>246</div>
+          <div class="price-period">ogni 6 mesi</div>
+          <div class="price-note">Circa 41€ al mese</div>
+          <a href="https://wa.me/393931263764?text=Ciao%21%20Vorrei%20informazioni%20sull%27abbonamento%20semestrale." target="_blank" rel="noopener" class="btn btn-outline-red">Chiedi info su WhatsApp</a>
+        </div>
+      </div>
+      <div class="card price-card featured">
+        <div class="price-badge">Più conveniente</div>
+        <div class="card-body">
+          <div class="price-name">Annuale</div>
+          <div class="price-value"><sup>€</sup>446</div>
+          <div class="price-period">all'anno</div>
+          <div class="price-note">Circa 37€ al mese</div>
+          <a href="https://wa.me/393931263764?text=Ciao%21%20Vorrei%20informazioni%20sull%27abbonamento%20annuale." target="_blank" rel="noopener" class="btn btn-primary">Chiedi info su WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>La prima lezione è su di noi</h2>
+    <p>Vieni a conoscere Pegaso Gym: una prova gratuita, senza impegno, per scoprire sala pesi e corsi.</p>
+    <a href="contatti.html" class="btn btn-outline">Prenota ora</a>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <img src="img/logo-trasparente.png" alt="Pegaso Gym">
+        </div>
+        <p>Sala pesi, corsi e area cardio nel cuore di Arcola.</p>
+        <div class="social-row">
+          <a href="https://instagram.com/palestra_pegaso" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+          <a href="https://wa.me/393931263764" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1-.1.2-.3.2-.6.1-.9-.4-1.7-.9-2.4-1.6-.6-.6-1.2-1.3-1.6-2.1-.1-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.2-.5.1-.2 0-.4 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.5h-.5c-.2 0-.5.1-.7.3-.7.7-1.1 1.5-1.1 2.5.1 1.2.5 2.3 1.3 3.3 1.4 2 3.3 3.5 5.5 4.3 1.8.6 2.5.4 3-.1.6-.6 1-1.4 1.1-2.2 0-.1 0-.3-.2-.4z"/><path d="M12 2a10 10 0 00-8.5 15.2L2 22l4.9-1.3A10 10 0 1012 2z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4>Naviga</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="corsi.html">Corsi</a></li>
+          <li><a href="abbigliamento.html">Abbigliamento</a></li>
+          <li><a href="chi-siamo.html">Chi Siamo</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Orari</h4>
+        <ul>
+          <li>Lun–Sab: 5:30 – 00:00</li>
+          <li>Domenica: 8:00–14:00, 18:00–00:00</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <ul>
+          <li><a href="https://maps.app.goo.gl/AfYJcQ6Tn7Trak3XA" target="_blank" rel="noopener">Via Ameglia, 74 · Arcola (SP)</a></li>
+          <li><a href="tel:+393931263764">393 126 3764</a></li>
+          <li class="tbd">info@pegasogym.it</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Pegaso Gym.</span>
+      <span>Sito dimostrativo, realizzato come proposta di design — non ufficiale.</span>
+    </div>
+  </div>
+</footer>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
